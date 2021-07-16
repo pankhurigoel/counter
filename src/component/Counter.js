@@ -24,7 +24,14 @@ export const Counter = () => {
     }
 
     const handleChange = (e) => {
-        setCount(Number(e.target.value))
+        if(Number(e.target.value) > maxValue) {
+            setCount(maxValue)
+        } else if (Number(e.target.value) < minValue) {
+            setCount(minValue)
+        } else {
+            setCount(Number(e.target.value));
+        }
+        
     }
 
     return (

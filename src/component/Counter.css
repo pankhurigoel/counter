@@ -1,0 +1,49 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.counter-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+input{  
+    border: 1px solid #B24242;
+    width: 60px;
+    text-align: center;
+    color: #B24242;
+    height: 52px;
+    background-color: #FBE8E8;
+    font-size: 21px;
+    font-family: 'Avenir';
+    font-weight: bold;
+}
+
+button{
+    border: 1px solid #B24242;
+    width: 60px;
+    /* border-color: #B24242; */
+    height: 56px;
+    font-size: 21px;
+    font-family: 'Avenir';
+    font-weight: bold;
+}
+
+.decrement {
+    border-radius: 8px 0 0 8px;
+    color: #B24242;
+    background-color: #FFFFFF;
+}
+
+.increment {
+    border-radius: 0 8px 8px 0;
+    background-color: #B24242;
+    color: #FFFFFF;    
+}
